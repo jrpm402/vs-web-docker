@@ -1,0 +1,10 @@
+version: '3.9'
+services:
+  vscode:
+    # Use dockerfile to build image
+    build: .
+    # Define container name
+    container_name: vscode
+    # Ports to expose
+    ports:
+      - "3000:3000"
