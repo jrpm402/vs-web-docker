@@ -1,0 +1,16 @@
+{
+  "name": "localnet_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "localnet:up": "docker-compose down; docker-compose up -d localnet",
+    "localnet:down": "docker-compose down",
+    "localnet:logs": "docker-compose logs -f",
+    "test": "sh test.sh"
+  },
+  "author": "",
+  "license": "ISC"
+}
